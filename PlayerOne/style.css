@@ -56,8 +56,18 @@ header{
 #SecIcon{
     background-color: #333;
     margin-left: 50px;
-    width: 320px;
+    width: 400px;
     height: 200px;
     border-radius: 10px;
    
 }
+#ImageSecs{
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+}
+#Notice{
+    background-color: chocolate;
+    
+}
+
