@@ -4,6 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"> 
+    <style>
+      .GroupNotice{
+        position:relative; /* importante para sobre posicao*/
+        display:inline-block;
+        width: 430px;
+        height: 200px;
+        margin-left: 80px;
+        border-radius: 10px;
+        overflow: hidden /*a legenda respeita os cantos arredondados*/
+      }
+      .NoticeImg{
+        width: 100%;  
+        height: 100%;
+        object-fit:cover;
+        display:block;
+      }
+      .Information{
+      position: absolute; /* isso aqui que faz o texto flutuar*/
+      bottom: 0; /*deixa o texto no fundo da imagem*/
+      left: 0;  /*alinha na esquerda*/
+      width: 100%; /* ocupa a largura da imagem*/
+      background-color: rgba(222, 48, 14, 0.663);
+      color: white;
+
+      padding: 15px;
+      font-family: Arial, Helvetica, sans-serif;
+      box-sizing: border-box; /*nao deixa o texto escapar da div*/
+      text-align: center;
+      }
+      .GroupNotice a{
+        text-decoration: none;
+      }
+    </style>
 </head>
 <body>
    <header>
@@ -19,13 +52,16 @@
      <input type="text"  placeholder=" 🔎 Pesquisar" id="search">
     </header>
     <h1 id="title">Noticias</h1>
-   <section id="SecIcon">
-    <div id="Notice">
+    <div class="GroupNotice">
     <a href="thegameawards.jpg" target="_blank">
-    <img src="thegameawards.jpg" id="ImageSecs">
+    <img src="thegameawards.jpg" class="NoticeImg">
+    <div class="Information">
+      Saiba os Ganhadores do The Game Awards 2025
+    </div>
     </a>
-   </section>
-     </div>
+  </div>
+    </body>
+</div>
 </html>
 
 
