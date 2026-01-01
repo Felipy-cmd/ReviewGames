@@ -4,15 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"> 
+    <link rel="icon" type="imagem" href="images/control.png">
+    <title>Review Games</title>
     <style>
       .GroupNotice{
         position:relative; /* importante para sobre posicao*/
         display:inline-block;
         width: 430px;
         height: 200px;
-        margin-left: 80px;
+        margin-left: 50px;
+        margin-bottom: 30px;
         border-radius: 10px;
         overflow: hidden /*a legenda respeita os cantos arredondados*/
+      }
+      .GroupNotice2{
+        background-color:black;
+        position:relative;
+        display:inline-block;
+        width: 620px;
+        height:400px;
+        margin-left: 50px;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+    .GroupNotice3{
+        position:relative;
+        display:inline-block;
+        width: 760px;
+        height:400px;
+        margin-left: 20px;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      .GroupNotice3 iframe {
+        width: 100%;  
+         height: 100%; 
+        border: none; 
+        display: block;   
       }
       .NoticeImg{
         width: 100%;  
@@ -33,35 +61,103 @@
       box-sizing: border-box; /*nao deixa o texto escapar da div*/
       text-align: center;
       }
+      .Information2{
+      position: absolute; /* isso aqui que faz o texto flutuar*/
+      bottom: 0; /*deixa o texto no fundo da imagem*/
+      left: 0;  /*alinha na esquerda*/
+      width: 100%; /* ocupa a largura da imagem*/
+      background-color: rgba(68, 32, 197, 0.663);
+      color: white;
+
+      padding: 15px;
+      font-family: Arial, Helvetica, sans-serif;
+      box-sizing: border-box; /*nao deixa o texto escapar da div*/
+      text-align: center;
+      }
       .GroupNotice a{
         text-decoration: none;
+      }
+      .SearchWrapper{
+        position:relative;
+        display:flex;
+        align-items: center;
+        margin-left: 50px;
+      }
+
+      .SearchIcon{
+        position: absolute;
+        left: 12px;
+        width: 16px;
+        height: 16px;
+        z-index: 1;
+      }
+      #search{
+        padding-left: 35px;
+        width: 250px;
+        height: 35px;
+        border-radius: 20px;
+        border: none;
+        background-color: #333;
+        color: white;
+        outline: none;
       }
     </style>
 </head>
 <body>
    <header>
     <section>
-    <img src="control.png" class="control">
+    <img src="images/control.png" class="control">
     </section>
     <section>
-     <input type="button" value="Inicial" class="ButtonHeader">
+     <input  style="margin-left: 50px;" type="button" value="Inicial" class="ButtonHeader">
      <input type="button" value="Recomendados"class="ButtonHeader">
      <input type="button" value="Jogos" class="ButtonHeader">
      <input type="button" value="Sobre" class="ButtonHeader">
      </section>
-     <input type="text"  placeholder=" 🔎 Pesquisar" id="search">
+     <div class="SearchWrapper">
+      <img src="images/search.svg" class="SearchIcon">
+     <input type="text"  placeholder="Pesquisar" id="search">
+     </div>
     </header>
     <h1 id="title">Noticias</h1>
     <div class="GroupNotice">
     <a href="thegameawards.jpg" target="_blank">
-    <img src="thegameawards.jpg" class="NoticeImg">
+    <img src="images/thegameawards.jpg" class="NoticeImg">
     <div class="Information">
       Saiba os Ganhadores do The Game Awards 2025
     </div>
     </a>
   </div>
-    </body>
-</div>
+    <div class="GroupNotice">
+    <a href="thegameawards.jpg" target="_blank">
+    <img src="images/thegameawards.jpg" class="NoticeImg">
+    <div class="Information">
+      Saiba os Ganhadores do The Game Awards 2025
+    </div>
+    </a>
+  </div>
+   </div>
+    <div class="GroupNotice">
+    <a href="thegameawards.jpg" target="_blank">
+    <img src="images/thegameawards.jpg" class="NoticeImg">
+    <div class="Information">
+      Saiba os Ganhadores do The Game Awards 2025
+    </div>
+    </a>
+  </div>
+  <br>
+  <div class="GroupNotice2">
+  <a href="psplus.jpg" target="_blank">
+  <img src="images/psplus.jpg" class="NoticeImg">
+  <div class="Information2">
+    Playstation:Saiba os jogos Mensais da Ps Plus 2026
+    </div>
+  </a>
+  </div>
+  <div class="GroupNotice3">
+    <iframe src="https://www.youtube.com/embed/T54OWinnymM?si=qr6j-TTwG7demWVy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+  </body>
 </html>
 
 
