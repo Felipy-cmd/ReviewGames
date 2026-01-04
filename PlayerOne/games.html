@@ -11,7 +11,8 @@
             background-color:rgb(13, 13, 13);
             height: 650px;
             width: 400px;
-            margin: 50px;
+            margin-left: 80px;
+            margin-bottom: 40px;
             display: inline-block;
             vertical-align: top;
             border-radius: 10px;
@@ -23,7 +24,11 @@
             margin-left: 50px;
             margin-top: 25px;
             border-radius: 5px;
+            transition: transform 0.3s ease;
             
+        }
+        .Game:hover{
+            transform: scale(1.05);
         }
         .Titletext{
             color: #ffff;
@@ -35,7 +40,42 @@
         .text{
             color: #ffff;
             text-align:center;
-            font-size: smaller;
+            font-size: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 30px;
+        }
+        .ReadMore{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            text-align: center;
+            transition: transform 0.3s ease;
+
+        }
+        .ReadMore:hover{
+            transform: scale(1.05);
+        }
+        .Infog{
+            background-color: rgb(13,13,13);
+            margin: 30px;
+            margin-left: 70px;
+            width: 650px;
+            height: 200px;
+            border-radius: 10px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .Game2{
+            height: 150px;
+            width: 150px;   
+            margin: 20px;
+        }
+        .fontgame{
+            color: white;
+            text-align: center;
+            margin-left: 30px;
+            vertical-align: top;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
         }
     </style>
 </head>
@@ -57,13 +97,38 @@
     </header>
      <h1 id="title">Escolhas do Editor</h1>
      <div class="divGames">
-        <a href="images/reddead2.png" target="_blank">
-        <img src="images/reddead2.png" class="Game">
+        <a href="images/reddead2.webp" target="_blank">
+        <img src="images/reddead2.webp" class="Game">
         </a>
         <h1 class="Titletext">Red Dead Redemption 2</h1>
         <p class="text">Red Dead Redemption 2 é um jogo de ação e aventura em mundo aberto ambientado no Velho Oeste. Você controla Arthur Morgan, um fora da lei que faz parte da gangue Van der Linde.O jogo foca em sobrevivência, escolhas morais e no fim da era dos cowboys, com uma história profunda e realista.</p>
+        <h1 class="ReadMore" target="_blank">Ler Mais+</h1>
      </div>
-     <div class="divGames"></div>
-     <div class="divGames"></div>
+    
+     <div class="divGames">
+        <a href="images/cyberpunk2077.jpg" target="_blank">
+        <img src="images/cyberpunk2077.jpg" class="Game">
+        </a>
+        <h1 class="Titletext">Cyberpunk 2077</h1>
+        <p class="text">Cyberpunk 2077 é um RPG de ação em mundo aberto ambientado em Night City, uma metrópole futurista dominada por corporações e tecnologia avançada. Você controla V, um mercenário que realiza missões, evolui habilidades e implantes cibernéticos, a história gira em torno de poder, identidade e sobrevivência em um mundo caótico e altamente tecnológico.</p>
+        <h1 class="ReadMore" target="_blank">Ler Mais+</h1>
+     </div>
+    
+     <div class="divGames">
+        <a href="images/WatchDogs2.jpg" target="_blank">
+        <img src="images/WatchDogs2.jpg" class="Game">
+        </a>
+        <h1 class="Titletext">Watch Dogs 2</h1>
+        <p class="text">Watch Dogs 2 é um jogo de aventura e ação em mundo aberto onde você controla Marcus Holloway, um jovem hacker em San Francisco que se junta ao grupo DedSec para derrotar o sistema de vigilância ctOS 2.0 e expor abusos de grandes corporações. Você explora a cidade, hackeia dispositivos e completa missões de várias formas — furtiva ou com ação — usando gadgets como drones e carros controlados remotamente.</p>
+        <h1 class="ReadMore" target="_blank">Ler Mais+</h1>
+     </div>
+     <h1 id="title">Recomendados</h1>
+     <div class="Infog">
+        <a href="images/cyberpunk2077.jpg">
+            <img src="images/cyberpunk2077.jpg" class="Game2">  
+        </a>
+        <p  style="text-align: center; color: white; margin-top: -150px;">Cyberpunk 2077</p>
+     </div>
+     <div class="Infog"></div>
 </body>
 </html>
