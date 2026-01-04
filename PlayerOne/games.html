@@ -17,6 +17,12 @@
             vertical-align: top;
             border-radius: 10px;
         }
+        .divGames:hover {
+         transform: scale(1.02); 
+         box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.8); 
+         transition: all 0.3s ease;
+         cursor: pointer;
+}
         .Game{
             height: 300px;
             width: 300px;
@@ -26,9 +32,6 @@
             border-radius: 5px;
             transition: transform 0.3s ease;
             
-        }
-        .Game:hover{
-            transform: scale(1.05);
         }
         .Titletext{
             color: #ffff;
@@ -49,6 +52,7 @@
             color: white;
             text-align: center;
             transition: transform 0.3s ease;
+            cursor: pointer;
 
         }
         .ReadMore:hover{
@@ -63,19 +67,34 @@
             border-radius: 10px;
             display: inline-block;
             vertical-align: top;
+            transition: transform 0.3 ease;
+        }
+        .Infog:hover{
+            transition: scale(1.05);
+            box-shadow: 0px 15px 30px rgba(0,0,0,0.8);
+            transition: all 0.3s ease;
+            cursor: pointer;
         }
         .Game2{
             height: 150px;
             width: 150px;   
             margin: 20px;
+            border-radius: 10px;
         }
         .fontgame{
-            color: white;
-            text-align: center;
-            margin-left: 30px;
-            vertical-align: top;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
             
+            text-align: center;
+            color: white;
+            margin-top: -175px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-left: 35px;
+            font-size: 20px;
+        }
+        .InfoP{
+            color: #ffff;
+            margin-left: 180px;
+            margin-right: 20px;
+            font-size: small;
         }
     </style>
 </head>
@@ -127,8 +146,15 @@
         <a href="images/cyberpunk2077.jpg">
             <img src="images/cyberpunk2077.jpg" class="Game2">  
         </a>
-        <p  style="text-align: center; color: white; margin-top: -150px;">Cyberpunk 2077</p>
+        <h1  class="fontgame">Cyberpunk 2077</h1>
+        <p class="InfoP">Cyberpunk 2077 é um RPG de ação em mundo aberto ambientado em Night City, uma metrópole futurista dominada por corporações e tecnologia avançada. Você controla V, um mercenário que realiza missões, evolui habilidades e implantes cibernéticos, a história gira em torno de poder, identidade e sobrevivência em um mundo caótico e altamente tecnológico.</p>
      </div>
-     <div class="Infog"></div>
+     <div class="Infog">
+        <a href="images/southparkbuthole.jpeg">
+            <img src="images/southparkbuthole.jpeg" class="Game2">  
+        </a>
+        <h1  class="fontgame" style="margin-left: 140px; font-size: 20px;">South Park The Fractured But Hole </h1>
+        <p class="InfoP">South Park: A Fenda que Abunda Força é um RPG tático que parodia as franquias de cinema de super-heróis, colocando você no papel do "Novato" em meio a uma guerra civil entre os amigos de Cartman. O jogo substitui o combate clássico por um sistema de grade estratégica e utiliza o humor ácido característico da série para abordar temas sociais, permitindo que você explore a cidade, customize seus poderes e utilize "peidos que dobram o tempo" para derrotar inimigos e resolver quebra-cabeças..</p>
+     </div>
 </body>
 </html>
