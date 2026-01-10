@@ -24,27 +24,43 @@
         background-size: cover; 
         background-position: center;
         display: flex;
-        justify-content: flex-start;
-        gap: 20px;
-
-        /*DivShort*/
-        position: relative;
-        display:flex;
-        flex-direction: column;
+        flex-direction: column; 
+        
     }
-    .BackgroundGame h1{
+    .TextBackground {
+        margin: 0;
         color: white;
         font-size: 50px;
-        z-index: 2; /* isso aqui deixa a fonte na frente de tudo*/
+        z-index: 2; 
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        display: inline-block;
     }
     .ClassificationAge{
-       height: 60px;
-       width: auto;
-       margin-left: 700px;
-       vertical-align: middle;
+       height: 120px;
+       width: 120px;
+       margin-left: 1100px;
     }
+    .Title{
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+         font-size: 50px;
+         margin-top: 550px;
+         margin-right: 500px;
+    }
+    .Plataforms{
+        background-color: #333;
+        border-radius: 10px;
+        width: 420px;
+        height: 120px;
+        margin: 20px;
+        display: inline-block;
+    }
+    .words{
+        color: white;
+        font-size: 30px;
+        text-align: left;}
+
+
+        
  /*    -- ARRUMAR DEPOIS --
     .DivShort{
         width: 300px;
@@ -86,9 +102,18 @@
  
     <div class="BackgroundGame">
         <div>
-        <h1>Cyberpunk 2077</h1>
+        <h1 class="TextBackground">Cyberpunk 2077</h1>
         <img  class="ClassificationAge" src="images/a18.png">
     </div>
-   <h1 style="color: white; font-size: 50px;margin: 120px; margin-top:780px;">Plataformas</h1>
+   <h1 class="Title">Plataformas</h1>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="Plataforms">
+        <h2 class="words">teste</h2>
+    </div>
 </body>
 </html>
