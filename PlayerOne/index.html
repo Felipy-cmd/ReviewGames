@@ -46,18 +46,37 @@
          margin-top: 550px;
          margin-right: 500px;
     }
+    .ContainerPlataform{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding-left: 50px;
+    }
     .Plataforms{
         background-color: #333;
         border-radius: 10px;
+        margin-top: 10px;
         width: 420px;
         height: 120px;
-        margin: 20px;
-        display: inline-block;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* cria um espaco e deixa os elemtos na ponta*/
+        padding: 0 20px ; /*nao deixa os itens grudadarem nas bordas*/
     }
-    .words{
+    .Plataforms p{
         color: white;
         font-size: 30px;
-        text-align: left;}
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 0;
+        flex-grow: 1;  /*fez o texto empurrar a imagem */
+        text-align: center;
+    }
+    .IconsPlataform{
+        height: 60px;
+        width: 60px;
+        order: 2; /* a imagem e o segundo item  da direita*/
+    }
 
 
         
@@ -112,8 +131,19 @@
     <br>
     <br>
     <br>
+    <div class="ContainerPlataform">
     <div class="Plataforms">
-        <h2 class="words">teste</h2>
+        <img  class="IconsPlataform" src="images/computer_icon.png">
+        <p>PC</p>
+    </div>
+    <div class="Plataforms">
+        <img  class="IconsPlataform" src="images/PSicon.png">
+        <p>PlayStation</p>
+    </div>
+    <div class="Plataforms">
+        <img  style="height: 300px; width: 300;" class="IconsPlataform" src="images/XboxIcon.png">
+        <p>XBOX</p>
+    </div>
     </div>
 </body>
 </html>
